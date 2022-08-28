@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Statkiewicz Family</title>
+        <!--<link rel="icon" href="favicon.png" />-->
+        <link rel="stylesheet" type="text/css" href="css/lib/bootstrap-5.1.3.min.css"/>
+        <link rel="stylesheet" type="text/css" href="css/site.css"/>
+    </head>
+    <body class="h-100">
+        <div class="container-fluid h-100" id="application">
+            <div class="row h-100">
+                <div class="col-md-2 bg-dark text-white" style="border-right: 5px solid #dddddd;">
+                    <h5 class="text-center mt-3" data-bind="click: showHome" style="cursor: pointer">Staskiewicz Family</h5>
+                    <hr/>
+                    <ul class="nav flex-column">
+                        <li class="nav-item bg-secondary mb-2" style="border-radius: 5px">
+                            <a class="nav-link text-white" href="#" data-bind="click: showCalendar">Calendar</a>
+                        </li>
+                        <li class="nav-item bg-secondary mb-2" style="border-radius: 5px">
+                            <a class="nav-link text-white" href="#" data-bind="click: showGallery">Gallery</a>
+                        </li>
+                        <li class="nav-item bg-secondary mb-2" style="border-radius: 5px">
+                            <a class="nav-link text-white" href="#" data-bind="click: showFamilyTree">Family Tree</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-10">
+                    <div id="home" data-bind="visible: homeVisible" style="display: none">
+                        <h1 class="text-center">Welcome to the Staskiewicz Family</h1>
+
+                        <div class="alert alert-warning">
+                            <span>Some notification</span>
+                        </div>
+
+                        <h4>Upcoming Events</h4>
+
+                        <h4>Recent Gallery Upload</h4>
+                    </div><!--/home-->
+                    <div id="calendar" data-bind="visible: calendarVisible" style="display: none">
+                        <table class="table table-bordered" data-bind="with: calendar" style="table-layout:fixed">
+                            <thead>
+                                <tr>
+                                    <th class="table-secondary text-start" data-bind="click: previousMonth">Previous</th>
+                                    <th colspan="5" class="text-center"><span data-bind="text: monthYear"></span></th>
+                                    <th class="table-secondary text-end" data-bind="click: nextMonth">Next</th>
+                                </tr>
+                                <tr>
+                                    <th class="text-center">Sunday</th>
+                                    <th class="text-center">Monday</th>
+                                    <th class="text-center">Tuesday</th>
+                                    <th class="text-center">Wednesday</th>
+                                    <th class="text-center">Thursday</th>
+                                    <th class="text-center">Friday</th>
+                                    <th class="text-center">Saturday</th>
+                                </tr>
+                            </thead>
+                            <tbody data-bind="foreach: weeks">
+                                <tr data-bind="foreach: days">
+                                    <td style="height: 75px"><span class="" data-bind="text: dayOfMonth"></span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div><!--/calendar-->
+                    <div id="gallery" data-bind="visible: galleryVisible" style="display: none">
+                        <h1>Gallery</h1>
+                    </div><!--/gallery-->
+                    <div id="familytree" data-bind="visible: familyTreeVisible" style="display: none">
+                        
+                    </div><!--/familytree-->
+                </div> 
+            </div>
+        </div>
+        <script type="text/javascript" src="js/lib/jquery-3.6.0.min.js"></script>
+        <script type="text/javascript" src="js/lib/bootstrap.bundle-5.1.3.min.js"></script>
+        <script type="text/javascript" src="js/lib/knockout-min.js"></script>
+        <script src="https://d3js.org/d3.v7.min.js"></script>
+        <script type="text/javascript" src="js/IndexViewModel.js"></script>
+    </body>
+</html>

@@ -1,0 +1,22 @@
+{
+  "name": "staskiewicz_family",
+  "version": "1.0.0",
+  "description": "staskiewiczfamily.com",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ninjacoder88/staskiewiczfamily.com.git"
+  },
+  "author": "Ninja Software Consulting",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ninjacoder88/staskiewiczfamily.com/issues"
+  },
+  "homepage": "https://github.com/ninjacoder88/staskiewiczfamily.com#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
