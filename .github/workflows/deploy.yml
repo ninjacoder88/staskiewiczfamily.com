@@ -1,0 +1,21 @@
+name: Continuous Deployment
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Build the Docker image
+      run: docker build ./src -t staskiewicz
+    - name: Log into registry
+      run: echo "${{ secrets.nsc_key }}" | docker login ninjasoftware.azurecr.io -u ninjasoftware --password-stdin
+    - name: Push the docker image
+      run: |
+        docker tag staskiewicz ninjasoftware.azurecr.io/staskiewicz
+        docker push ninjasoftware.azurecr.io/staskiewicz
