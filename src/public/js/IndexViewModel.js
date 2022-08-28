@@ -114,7 +114,7 @@ $(document).ready(function(){
 
     function FamilyTree(){
         const self = this;
-        const data = {name: "sophie", children: [
+        const data = {name: "stanley (sophie)", children: [
             {name: "lou", children: []},
             {name: "rich (suzie)", children: [
                 {name: "kenny (beth)", children: []},
@@ -122,8 +122,12 @@ $(document).ready(function(){
             ]},
             {name: "thersea (tony)", children: [
                 {name: "ray (joann)", children: [
-                    {name: "justin ()", children: []},
-                    {name: "alisha ()", children: []}
+                    {name: "justin ()", children: [
+                        {name: "kid?", children: []}
+                    ]},
+                    {name: "alisha ()", children: [
+                        {name: "kid?", children: []}
+                    ]}
                 ]},
                 {name: "russ (lorie)", children: []},
                 {name: "roger (wendy)", children: [
@@ -145,9 +149,18 @@ $(document).ready(function(){
                 {name: "jenna", children: []}
             ]},
             {name: "frank (jean)", children: [
-                {name: "frank", children: []},
-                {name: "kim", children: []},
-                {name: "greg", children: []}
+                {name: "frank", children: [
+                    {name: "", children: []},
+                ]},
+                {name: "kim", children: [
+                    {name: "", children: []},
+                ]},
+                {name: "greg", children: [
+                    {name: "greg", children: []},
+                ]},
+                {name: "sandy", children: [
+                    {name: "aaron", children: []},
+                ]}
             ]},
             {name: "joe (lucy)", children: []},
             {name: "ed (nancy)", children: []},
@@ -176,7 +189,7 @@ $(document).ready(function(){
             }
         });
 
-        const svg = d3.create("svg").attr("viewBox", [-margin.left, -margin.top, width, dx]).style("font", "10px sans-serif").style("user-select", "none");
+        const svg = d3.create("svg").attr("viewBox", [-margin.left, -margin.top, width, dx]).style("font", "5px sans-serif").style("user-select", "none");
         const gLink = svg.append("g").attr("fill", "none").attr("stroke", "#555").attr("stroke-opactity", 0.4).attr("style-width", 1.5);
         const gNode = svg.append("g").attr("cursor", "pointer").attr("pointer-events", "all");
 
