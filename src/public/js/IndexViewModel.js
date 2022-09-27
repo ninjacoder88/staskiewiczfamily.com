@@ -115,60 +115,150 @@ $(document).ready(function(){
     function FamilyTree(){
         const self = this;
         const data = {name: "stanley (sophie)", children: [
-            {name: "lou", children: []},
-            {name: "rich (suzie)", children: [
-                {name: "kenny (beth)", children: []},
-                {name: "wendy", children: []}
+            {name: "lou (stella)", children: []},
+            {name: "dorothy (walt)", children: [
+                {name: "wally (roseanne)", children: [
+                    {name: "brent", children: []},
+                    {name: "april", children: []}
+                ]},
+                {name: "kathy (rick)", children: []}
             ]},
-            {name: "thersea (tony)", children: [
+            {name: "mary (ed)", children: [
+                {name: "judy (rick)", children: [
+                    {name: "rick (theresea)", children: [
+                        {name: "lennon", children: []},
+                        {name: "benjamin", children: []},
+                        {name: "chase", children: []}
+                    ]},
+                    {name: "michelle (?:?)", children: [
+                        {name: "?", children: []},
+                        {name: "?", children: []}
+                    ]}
+                ]},
+                {name: "jayne (jeff)", children: [
+                    {name: "angela", children: [
+                        {name: "?", children: []}
+                    ]},
+                ]},
+                {name: "jackie", children :[]},
+                {name: "ed ()",children: [
+                    {name: "?", children: []}
+                ]},
+                {name: "jeff ()", children: [
+                    {name: "?", children: []}
+                ]}
+            ]},
+            {name: "theresea (tony)", children: [
                 {name: "ray (joann)", children: [
-                    {name: "justin ()", children: [
-                        {name: "kid?", children: []}
+                    {name: "justin (anna)", children: [
+                        {name: "", children: []},
+                        {name: "", children: []}
                     ]},
                     {name: "alisha ()", children: [
                         {name: "kid?", children: []}
                     ]}
                 ]},
+                {name: "gina", children: []},
                 {name: "russ (lorie)", children: []},
                 {name: "roger (wendy)", children: [
                     {name: "grant", children: []},
                     {name: "grace", children: []}
                 ]},
-                {name: "regina", children: []}
+                
+            ]},
+            {name: "rita (joe)", children: [
+                {name: "michael (sandy)", children: [
+                    {name: "jennifer", children: []},
+                    {name: "diane", children: []},
+                    {name: "christina", children: []},
+                    {name: "?", children: []},
+                ]},
+                {name: "jerry", children: [
+                    {name: "?", children: []},
+                ]},
+                {name: "barbara", children: []},
+                {name: "nancy", children: []},
+            ]},
+            {name: "joe (lucy)", children: [
+                {name: "steve (karen)", children: [
+                    {name: "?", children: []},
+                    {name: "?", children: []}
+                ]},
+                {name: "debbie", children: []},
+                {name: "dave (gretta)", children: [
+                    {name: "nathan", children: []},
+                    {name: "connor", children: []}
+                ]}
+            ]},
+            {name: "frank (jean)", children: [
+                {name: "frank (karen)", children: [
+                    {name: "brad", children: []},
+                    {name: "andrea (jed)", children: [
+                        {name: "?", children: []}
+                    ]},
+                ]},
+                {name: "bobby", children: []},
+                {name: "kim (paul)", children: [
+                    {name: "amanda", children: []},
+                    {name: "kristyn (tommy)", children: []},
+                    {name: "nick", children: []}
+                ]},
+                {name: "sandy (matt)", children: [
+                    {name: "aaron", children: []},
+                ]},
+                {name: "greg (suzie)", children: [
+                    {name: "gregory", children: []},
+                    {name: "", children: []},
+                    {name: "", children: []},
+                    {name: "benjamin", children: []},
+                    {name: "will", children: []}
+                ]},
+            ]},
+            {name: "ed (nancy)", children: [
+                {name: "dawn () x", children: [
+                    {name: "paige x", children: []},
+                    {name: "? x", children: []}
+                ]},
+                {name: "krista", children: []},
+                {name: "brian", children: [
+                    {name: "?", children: []}
+                ]}
+            ]},
+            {name: "jim (marta) (lyn)", children: [
+                {name: "[marta] dennis", children: []},
+                {name: "[lyn] jill (virginia)", children: [
+                    {name: "aiden", children: []},
+                    {name: "adelyn", children: []}
+                ]},
+                {name: "[lyn] jenna (?)", children: [
+                    {name: "brookelyn", children: []},
+                    {name: "talia", children: []},
+                    {name: "kahlia?", children: []}
+                ]}
+            ]},
+            {name: "phyllis (phil)", children: [
+                {name: "julie (david)", children: [
+                    {name: "boy?", children: []},
+                    {name: "girl?", children: []},
+                    {name: "boy", children: []},
+                ]},
             ]},
             {name: "marge (tom)", children: [
                 {name: "joann", children: []},
                 {name: "chris (mickell)", children: [
-                    {name: "virginia", children: []},
-                    {name: "victoria", children: []}
+                    {name: "victoria", children: []},
+                    {name: "virginia", children: []}
                 ]},
                 {name: "tommy", children: []}
             ]},
-            {name: "jim (lyn)", children: [
-                {name: "jill", children: []},
-                {name: "jenna", children: []}
-            ]},
-            {name: "frank (jean)", children: [
-                {name: "frank", children: [
-                    {name: "", children: []},
-                ]},
-                {name: "kim", children: [
-                    {name: "", children: []},
-                ]},
-                {name: "greg", children: [
-                    {name: "greg", children: []},
-                ]},
-                {name: "sandy", children: [
-                    {name: "aaron", children: []},
-                ]}
-            ]},
-            {name: "joe (lucy)", children: []},
-            {name: "ed (nancy)", children: []},
-            {name: "dorthy", children: []},
-            {name: "mary (ed)", children: []},
-            {name: "rita", children: []},
-            {name: "phyllis", children: []},
             {name: "barbara jean", children: []},
+            {name: "rich (suzie)", children: [
+                {name: "kenny (beth)", children: [
+                    {name: "bo", children: []},
+                    {name: "conner", children: []}
+                ]},
+                {name: "wendy", children: []}
+            ]},
         ]};
         //{name: "", children: []}
         const width = 500;
